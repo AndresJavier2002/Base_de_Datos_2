@@ -1,0 +1,56 @@
+body {
+    background-image: url('Imagenes/1.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #11f018;
+    color: #fff;
+    border: none;
+    border-radius: 170px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #10ee1b;
+  }
+  .log h1{
+    color: #fff;
+  }
+  .log label{
+    color: #fff;
+  }

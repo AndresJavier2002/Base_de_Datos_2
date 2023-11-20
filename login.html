@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrese en el sistema</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <div class="log">
+  <h1>Registro</h1>
+  <form id="registroForm">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="identificacion">Identificación:</label>
+    <input type="text" id="identificacion" name="identificacion" required><br>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required><br>
+
+    <button type="submit">Guardar</button>
+  </form>
+</div>
+
+  <script>
+    document.getElementById("registroForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita el envío del formulario
+
+      // Obtener los valores de los campos
+      var nombre = document.getElementById("NombreComplete").value;
+      var identificacion = document.getElementById("Identificacion").value;
+      var direccion = document.getElementById("Direccion").value;
+
+      // Crear un objeto JSON con los datos
+      var datos = {
+        nombre: nombre,
+        identificacion: identificacion,
+        direccion: direccion
+      };
+
+      // Convertir el objeto JSON a una cadena
+      var datosJson = JSON.stringify(datos);
+
+      // Mostrar la cadena JSON en la consola (para fines de demostración)
+      console.log(datosJson);
+
+      // Aquí puedes enviar los datos JSON a un servidor, almacenarlos en una base de datos, etc.
+    });
+  </script> 
+</body>
+</html>
+

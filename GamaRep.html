@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Web</title>
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        
+    <header class="header3">
+
+        <div class="header-content container">
+
+            <h1>WEBMOTORS</h1>
+            <p>
+            <h4>Aqui conoceras algunos de nuestros productos </h4>
+            </p>
+
+        </div>
+    </header>
+     <!--  Definicion de la seccion de productos en html  -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styleproduc.css">
+    <title>Repuestos.</title>
+</head>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img1.webp" alt="">
+                    </div>
+                    <p class="descripcion">Discos de cluth kawasaki KLX 250</p>
+                    <span class="precio">$ 99.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img2.webp" alt="">
+                    </div>
+                    <p class="descripcion" id>Cigueñal Pulsar NS 200, Orig</p>
+                    <span class="precio">$ 670.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img3.webp" alt="">
+                    </div>
+                    <p class="descripcion">Cilindro Honda Tornado 250</p>
+                    <span class="precio">$ 512.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Sillin boxer ct 100</p>
+                    <span class="precio">$ 70.000</span>
+                </div>
+            </div>
+            <p> </p> 
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Tacometro Yamaha RX 115</p>
+                    <span class="precio">$ 150.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img6.webp" alt="">
+                    </div>
+                    <p class="descripcion">Kit cilindro Dominar 400, Orig</p>
+                    <span class="precio">$ 820.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img7.png" alt="">
+                    </div>
+                    <p class="descripcion">Kit de arrastre KTM Duke 390</p>
+                    <span class="precio">$ 250.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenespro/img8.webp" alt="">
+                    </div>
+                    <p class="descripcion">Amortiguador Yamaha XTZ 250</p>
+                    <span class="precio">$ 1.050.000</span>
+                </div>
+            </div> 
+        </div>
+
+        <!-- definicion de contenedor para selecccionar el modelo del repuesto -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="imagenespro/img1.webp" alt="" id="img">
+                <h2 id="modelo">Repuesto</h2>
+                <p id="descripcion">Descripción repuesto</p>
+
+                <span class="precio" id="precio">$ 000</span>
+
+                <div class="fila"> 
+                    <div class="size">
+                        <label for="">Modelo de motocicleta</label>
+                        <select name="" id="">
+                            <option value="">2023</option>
+                            <option value="">2022</option>
+                            <option value="">2021</option>
+                            <option value="">2020</option>
+                            <option value="">2019</option>
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                            <option value="">2016</option>
+                            <option value="">2015</option>
+                            <option value="">2014</option>
+                            <option value="">2013</option>
+                            <option value="">2012</option>
+                            <option value="">2011</option>
+                            <option value="">2010</option>
+                            <option value="">2009</option>
+                            <option value="">2008</option>
+                        </select>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JSproduc.js"></script>  <!--  llamado del javascript para la 
+                                               seleccion de un producto  -->
+
+
+    <p> </p> <!--  barra separadora blanca  -->
+
+    <footer class="footer">
+        
+        <div class="footer-content container text-center">
+            <div class="link">
+                <div class="link-1 col">
+                    <img src="Imagenes/face.png" alt="">
+                    <h6>Facebook</h6>
+                </div>            
+                <div class="link-1 col">
+                    <img src="Imagenes/insta.png" alt="">
+                    <h6>Instagram</h6>
+                </div>
+                <div class="link-1 col">
+                    <img src="Imagenes/what.png" alt="">
+                    <h6>WhatsApp</h6>
+                </div>
+            </div>
+            <div class="link-2">
+                <ul>
+                    <h6><li>Telefono: 312 245 2648</li></h6>
+                   <h6><li>Email: webmotors2024@gmail.com</li></h6> 
+                   <h6><li>Direccion: Calle 40 Cra 3 # 34-25</li></h6>
+                   <h6><li>Autores:</li></h6>
+                   <h6><li>Jhonatan Jose Perez Rivera</li></h6>
+                   <h6><li>Andres Javier Orozco Begambre</li></h6>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </footer> 
+
+    
+</body>
+</html>
